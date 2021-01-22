@@ -16,20 +16,20 @@
 ## Restful API
 ```
 listing : query maintenance record by id
-[GET] /api/v{version}/cars/{id}/list
-[GET] /api/v{version}/cars/{id}/maintenance/list
+[GET] /api/v1/cars/{id}/list
+[GET] /api/v1/cars/{id}/maintenance/list
 
 adding : insert a car info or maintenance record
-[POST]/api/v{version}/cars/save    with carjson @RequestBody
-[POST]/api/v{version}/cars/{id}/maintenance/save  maintenance record with carmaintenancejson @RequestBody
+[POST]/api/v1/cars/save    with carjson @RequestBody
+[POST]/api/v1/cars/{id}/maintenance/save  maintenance record with carmaintenancejson @RequestBody
 
 updating : a car info or maintenance record 
-[PUT] /api/v{version}/cars/{id}/{token}/update   carjson @RequestBody
-[PUT] /api/v{version}/cars/{id}/{token}/maintenance/update  maintenance record
+[PUT] /api/v1/cars/{id}/{token}/update   carjson @RequestBody
+[PUT] /api/v1/cars/{id}/{token}/maintenance/update  maintenance record
 
 deleting : delete a record 
-[DELETE] /api/v{version}/cars/{id}/{token}/delete
-[DELETE] /api/v{version}/cars/{id}/{token}/maintenance/delete
+[DELETE] /api/v1/cars/{id}/{token}/delete
+[DELETE] /api/v1/cars/{id}/{token}/maintenance/delete
 
 ```
 ----  
