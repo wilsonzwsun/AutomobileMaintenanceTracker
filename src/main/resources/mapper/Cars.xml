@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.pa.amt.pojo.entity.Cars">
+        <table name="cars_tb" schema="automobile_maintanence" catalog=""/>
+        <attributes>
+            <id name="carId">
+                <column name="car_id"/>
+            </id>
+            <basic name="vin">
+                <column name="vin"/>
+            </basic>
+            <basic name="plate">
+                <column name="plate"/>
+            </basic>
+            <basic name="maker">
+                <column name="maker"/>
+            </basic>
+            <basic name="model">
+                <column name="model"/>
+            </basic>
+            <basic name="type">
+                <column name="type"/>
+            </basic>
+            <basic name="odometerReading">
+                <column name="odometer_reading"/>
+            </basic>
+            <basic name="produceYear">
+                <column name="produce_year"/>
+            </basic>
+            <basic name="status">
+                <column name="status"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

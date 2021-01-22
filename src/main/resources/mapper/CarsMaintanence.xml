@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.pa.amt.pojo.entity.CarsMaintanence">
+        <table name="cars_mt_tb" schema="automobile_maintanence" catalog=""/>
+        <attributes>
+            <id name="taskId">
+                <column name="task_id"/>
+            </id>
+            <basic name="carId">
+                <column name="car_id"/>
+            </basic>
+            <basic name="odometerReading">
+                <column name="odometer_reading"/>
+            </basic>
+            <basic name="taskName">
+                <column name="task_name"/>
+            </basic>
+            <basic name="maintenanceTime">
+                <column name="maintenance_time"/>
+            </basic>
+            <basic name="status">
+                <column name="status"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
